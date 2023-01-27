@@ -1,0 +1,55 @@
+@use '@_breakpoints' as bp;
+
+.section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 200px;
+  margin-top: 102px;
+
+  @include bp.mq-down('lg'){
+    padding: 0 10%;
+  }
+  @include bp.mq-down('sm'){
+    margin-top: 92px;
+    padding: 0 25px;
+  }
+}
+
+.section-title{
+  width: 100%;
+  font-family: 'Baskerville';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 39px;
+  text-align: left;
+  color: #000000;
+
+  @include bp.mq-down('md'){
+    font-size: 24px;
+    line-height: 25px;
+  }
+}
+
+.info-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  margin-top: 56px;
+  gap: 32px;
+  @include bp.mq-down('sm'){
+    margin-top: 32px;
+    gap: 24px;
+  }
+}
+
+.link{
+  margin-top:20px;
+
+  @include bp.mq-down('sm'){
+    margin-top:13px;
+  }
+}

@@ -16,6 +16,7 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
+      "@_breakpoints": ["./src/styles/_breakpoints.scss"],
       "@/*": ["./src/*"]
     }
   },

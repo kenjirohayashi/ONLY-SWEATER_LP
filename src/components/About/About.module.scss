@@ -1,0 +1,118 @@
+@use '@_breakpoints' as bp;
+
+.section{
+  padding: 0px 200px;
+  margin-top: 192px;
+  display: flex;
+  flex-direction: row;
+  @include bp.mq-down('xl'){
+    flex-direction: column;
+    padding: 0;
+    margin-top: 7.2vw;
+  }
+  @include bp.mq-down('sm'){
+    margin-top: 192px;
+  }
+}
+
+.images-container{
+  @include bp.mq-down('xl'){
+    display: flex;
+    flex-direction: row;
+    gap: 9px;
+    margin: auto;
+    padding: 0 10px;
+  }
+}
+
+.poncho-sweater{
+  display:none;
+  @include bp.mq-down('xl'){
+    display: block;
+  }
+}
+
+
+
+.content{
+  position: relative;
+  margin: auto 0 auto 56px;
+  @include bp.mq-down('xl'){
+    display: flex;
+    flex-direction: column;
+    margin: 47px 0 0 0;
+    width: auto;
+    height: auto;
+    gap: 18px;
+  }
+}
+
+.circle{
+  position: absolute;
+  display: block;
+  box-sizing: border-box;
+  width: 36vw;
+  height: 36vw;
+  border: 1px dashed #C5C5C5;
+  border-radius: 50%;
+  z-index: -1;
+  @include bp.mq-down('xl'){
+    display: none;
+  }
+}
+
+.content-title{
+  margin-left: 42.75px;
+  font-family: 'Baskerville';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 39px;
+  text-align: center;
+  color: #000000;
+  @include bp.mq-down('xl'){
+    margin-left: 0;
+  }
+}
+
+.content-description{
+  margin-top: 32px;
+  margin-left: 42.75px;
+  width: 34.8vw;
+  height: 280px;
+  font-family: 'Baskerville';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 35px;
+  color: #505A5F;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @include bp.mq-down('xl'){
+    margin: auto;
+    padding: 25px;
+    width: auto;
+    height: auto;
+  }
+}
+
+.content-body{
+  font-family: 'Noto Serif JP';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 35px;
+  @include bp.mq-down('md'){
+    font-size: 13px;
+    line-height: 34px;
+  }
+}
+
+.link{
+  margin-top: 16px;
+  margin-left: 42.75px;
+  @include bp.mq-down('xl'){
+    margin: auto;
+  }
+}

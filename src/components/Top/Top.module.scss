@@ -1,0 +1,77 @@
+@use '@_breakpoints' as bp;
+
+
+.section{
+  position: relative;
+}
+
+.container{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.poncho-sweater{
+  position: relative;
+  margin-top: auto;
+  margin-right: -2px;
+  width:496px;
+  @include bp.mq-down('sm'){
+    display: none;
+  }
+}
+
+.logo-container {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 4.3%;
+  width: 27.1vw;
+  z-index: -10;
+  @include bp.mq-down('sm'){
+    transform: translate(-50%, 0%);
+    width: 354px;
+    height: 283px;
+    top: 100%;
+  }
+}
+
+.flower-sweater{
+  position: relative;
+  width: 380px;
+  aspect-ratio: 380 / 512;
+  margin-top: auto;
+  @include bp.mq-down('sm'){
+    width: 390px;
+    aspect-ratio: 390 / 585;
+  }
+}
+
+.sleeve-knitting-sweater{
+  margin-left: -18px;
+  @include bp.mq-down('sm'){
+    display: none;
+  }
+}
+
+.notice{
+  background-color: #F5B05F;
+  text-align: center;
+  width: 100%;
+  >p{
+    color: white;
+    font-family: 'Noto Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 39px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include bp.mq-down('sm'){
+      height: 32px;
+      font-size: 12px;
+    }
+  }
+}

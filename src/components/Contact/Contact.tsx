@@ -43,7 +43,7 @@ const Contact = () => {
           <label htmlFor='content'>お問い合わせ内容</label>
           <input type='textarea' name='content' id='content' style={{ height: '193px' }} />
         </div>
-        <Button type={'submit'}>送信</Button>
+        <Button type={'submit'} style={{ border: 'none'}}>送信</Button>
       </form>
     </section>
   )
